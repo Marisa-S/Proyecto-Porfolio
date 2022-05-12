@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/*Navegación*/
+.logo {
+    width: 7rem;
+    margin-left: 15px;
+}
+.navbar-header {
+    background-color: #525050;
+}
+.navbar-header a {
+    color: #fff;
+}
+.fab {
+    color: #fff;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.btn {
+    box-shadow: 3px 3px 3px 3px rgba(250, 247, 247, 0.963);
+    
+}
+.fab:hover {
+    color: rgb(53, 14, 226);
+    font-size: 30px;
+}
+.edit {
+    font-size: 1.8em;
+    color: rgb(19, 129, 159);
+    position: absolute;
+   display: none;
+}
+.close {
+    font-size: 1.8em;
+    color: rgb(19, 129, 159);
+    position: absolute;
+    display: none;
+   
+}
+.edit-banner{
+    top: 3vh;
+    right: 50px;
+}
+.close-banner{
+    top: 3.5vh;
+    right: 20px; 
+}
+.edit-name {
+  
+    bottom: 22vh;
+    left: 260px;
+   
+    
+}
+.edit-acerca{
+     
+    top: 20vh;
+    right: 50px;
+
+}
+.close-acerca {
+    top: 20.2vh;
+    right: 20px;
+  
+}
+.edit-exp{
+    top: 13vh;
+    right: 50px;
+}
+.close-exp {
+    top: 13.2vh;
+    right: 20px; 
+}
+.edit-exp-1{
+    top: 42vh;
+    right: 50px;
+}
+.close-exp-1 {
+   
+    top: 42.2vh;
+    right: 20px; 
+}
+.edit-edu {
+   
+    top: 16vh;
+    right: 50px;
+
+}
+.close-edu {
+   
+    top: 16.2vh;
+    right: 20px; 
+}
+.edit-edu1 {
+    
+    top: 31vh;
+    right: 50px;
+
+}
+.close-edu1 {
+    
+    top: 31.2vh;
+    right: 20px;
+
+}
+.edit-edu2 {
+    
+    top: 57vh;
+    right: 50px;
+
+}
+.close-edu2 {
+    
+    top: 57.2vh;
+    right: 20px;
+
+}
+/*banner*/
+.card h5, p {
+    padding-left: 20px;
+}
+.card-img-overlay {
+   padding-top: 350px;
+   font-size: 1.2rem;
+}
+.banner {
+    width: 100%;
+    height: 83vh;
+    
+}
+.card-banner{
+    border: 0;
+    border-bottom: 0;
+}
+
+/*Acerca de */
+.foto {
+    position: absolute;
+    width: 11%;
+    height: 27%;
+    top: 68vh;
+    left : 40px;
+    overflow: hidden;
+    border: 2px solid #000000;
+    border-radius: 30%;
+    z-index: 1;
+    background-image: url("/img/foto.png");
+    background-position: center;
+}
+.foto-acerca {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.edit-foto {
+    position: absolute;
+    bottom: 22vh;
+    left: 200px;
+    font-size: 1.5em;
+}
+.card-center{
+    width: 95%;
+    left: 2px;
+    border: 2px solid #505153;
+    margin: 3px auto;
+    border-radius: 7px;
+}
+
+h5, h3 {
+    padding-left: 30px;
+    font-size: 2em;
+    color: rgb(19, 129, 159);
+    width: auto;
+}
+h3.title {
+    font-size: 1.7em;
+    color: rgb(19, 129, 159);
+}
+/*skills*/
+.pic-skills {
+    width: 30%;
+    margin: auto;
+    padding-top: 10px;
+}
+.js {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.title-card {
+    text-align: center;
+    border: 4px solid #26abdf;
+    border-radius: 4px;
+    width: 40vw;
+    margin:10px  auto;
+    
+}
+.title-card:hover {
+    background-color: rgb(79, 149, 247);
+    color: #f2f5f5;
+}
+section.skills .project {
+    width: 80%;
+    padding: auto;
+    border-radius: 7px;
+}
+.card {
+    border: 2px solid #505153;
+}
+
+
+.progress {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+}
+.progress::after  {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 15px solid #f2f5f5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.progress .progress-left {
+    left: 0;
+}
+.progress .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: 15px;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+}
+.progress .progress-left .progress-bar {
+    left: 100%;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-left: 0;
+    transform-origin: center left;
+    -webkit-transform-origin: center left;
+    
+}
+.progress .progress-right {
+    right: 0;
+}
+.progress .progress-right .progress-bar  {
+    right: 100%;
+    border-top-left-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-right: 0;
+    transform-origin: center right;
+    -webkit-transform-origin: center right;
+    animation: loading-1 1.8s linear forwards;
+}
+.progress .progress-value {
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    color: rgb(47, 44, 44);
+    text-align: center;
+    position: absolute;
+
+}
+.progress.blue .progress-bar {
+    border-color: #26abdf;
+}
+.progress.blue .progress-left .progress-bar {
+    animation: loading-2 1.5s linear forwards 1.8s;
+}
+
+@keyframes loading-1 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+    }
+}
+@keyframes loading-2 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(144deg);
+        -webkit-transform: rotate(144deg);
+    }
+    
+}
+.progress.yellow .progress-bar {
+    border-color: #fdc42f;
+}
+.progress.yellow .progress-left .progress-bar {
+    animation: loading-3 1s linear forwards 1.8s;
+}
+@keyframes loading-3 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+}
+.progress.red .progress-bar {
+    border-color: #f90429;
+}
+.progress.red .progress-left .progress-bar {
+    animation: loading-4 1.4s linear forwards 1.8s;
+}
+@keyframes loading-4 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+}
+
+/*Footer*/
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.footer-iconos{
+    display: flex;
+    padding: 0;
+    justify-content: right;
+    background-color: #525050;
+    width: 100%;
+}
+.footer-iconos li{
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: black;
+}
+.footer-design{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+@media screen and(max-width:768px) {
+    .banner {
+        width: auto;
+        height: 50vh;
+    }
+    .foto {
+        width: 15%;
+        height: 10%;
+    }
+    .title-card {
+        width: 120px;
+    }
+}
